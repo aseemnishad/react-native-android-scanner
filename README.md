@@ -5,13 +5,12 @@
 
 ## Getting started
 
+
+
+### Installation
+
 `$ npm install git+https://git@github.com/aseemnishad/react-native-android-scanner.git  --save`
 
-### Automatic installation
-
-`$ react-native link react-native-android-scanner`
-
-### Important
 
 * In `android/setting.gradle`
 
