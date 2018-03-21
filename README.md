@@ -37,5 +37,5 @@ import ReactNativeAndroidScanner from 'react-native-android-scanner';
 
 ```
 ## Credits
-This repo is a React Native implementation of the following native library : [https://github.com/mmackh/IPDFCameraViewController](https://github.com/jhansireddy/AndroidScannerDemo)
+This repo is a React Native implementation of the following native library : [AndroidScannerDemo](https://github.com/jhansireddy/AndroidScannerDemo)
   
