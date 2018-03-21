@@ -1,0 +1,2 @@
+include ':android', ':scanlibrary'
+include ':android'
