@@ -11,6 +11,7 @@
 
 `$ npm install git+https://git@github.com/aseemnishad/react-native-android-scanner.git  --save`
 
+`$ react-native link`
 
 * In `android/setting.gradle`
 
@@ -18,16 +19,6 @@
 ...
 include ':scanlibrary'
 project(':scanlibrary').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-scanner/android/scanlibrary')
-```
-
-* In `android/app/build.gradle`
-
-```gradle
-...
-dependencies {
-    ...
-    compile project(':scanlibrary')
-}
 ```
 
 ## Usage
