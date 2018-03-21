@@ -63,25 +63,6 @@ public class RNReactNativeAndroidScannerModule extends ReactContextBaseJavaModul
       currentActivity.startActivityForResult(intent, REQUEST_CODE);
   } 
 
-//  @Override
-//  protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        super.onActivityResult(requestCode, resultCode, data);
-//        if (requestCode == REQUEST_CODE && resultCode == Activity.RESULT_OK) {
-//            Uri uri = data.getExtras().getParcelable(ScanConstants.SCANNED_RESULT);
-//            Bitmap bitmap = null;
-//            try {
-//                bitmap = MediaStore.Images.Media.getBitmap(getReactApplicationContext().getContentResolver(), uri);
-//                getReactApplicationContext().getContentResolver().delete(uri, null, null);
-////                emitMessageToRN(getReactApplicationContext(), SCANNED_RESULT, bitmap);
-//                Log.d(REACT_CLASS, "onActivitiyResult scan ReactNativeAndroidScanner ");
-//                // scannedImageView.setImageBitmap(bitmap);
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//    }
-
-
     private final ActivityEventListener mActivityEventListener = new BaseActivityEventListener() {
 
         @Override
@@ -92,7 +73,7 @@ public class RNReactNativeAndroidScannerModule extends ReactContextBaseJavaModul
                 try {
                     bitmap = MediaStore.Images.Media.getBitmap(getReactApplicationContext().getContentResolver(), uri);
                     getReactApplicationContext().getContentResolver().delete(uri, null, null);
-//                emitMessageToRN(getReactApplicationContext(), SCANNED_RESULT, bitmap);
+                    emitMessageToRN(getReactApplicationContext(), SCANNED_RESULT, null);
                     Log.d(REACT_CLASS, "onActivitiyResult scan ReactNativeAndroidScanner ");
                     // scannedImageView.setImageBitmap(bitmap);
                 } catch (IOException e) {
