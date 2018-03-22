@@ -74,9 +74,7 @@ export default class App extends Component {
             </Text>
           </TouchableOpacity>
         </View>
-        <View style={{
-          styles.imageContainer
-        }}>
+        <View style={styles.imageContainer}>
           <Image
             style={styles.image}
             source={{
