@@ -3,6 +3,20 @@
 
 ## react native implementaion of [AndroidScannerDemo](https://github.com/jhansireddy/AndroidScannerDemo) 
 
+## Screenshots
+
+<div align="center">
+
+<img width="23%" src="" alt="Scan Input" title="Scan Input"></img>
+
+<img width="23%" src="" alt="Scan Points" title="Scan Points"></img>
+
+<img width="23%" src="" alt="After Scan" title="After Scan"></img>
+
+<img width="23%" src="" alt="Scanned Result" title="Scanned Result"></img>
+
+</div>
+
 ## Getting started
 
 
@@ -18,6 +32,14 @@
 include ':scanlibrary'
 project(':scanlibrary').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-scanner/android/scanlibrary')
 ```
+
+```
+* In android/app/build.gradle
+...
+dependencies {
+    ...
+    compile project(':scanlibrary')
+}```
 
 #### Add to an Activity
   Open your activity, usually located in `android/app/src/main/java/[your package]/MainApplication.java`.
