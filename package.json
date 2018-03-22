@@ -14,5 +14,8 @@
     "AndroidScannerDemo"
   ],
   "author": "Aseem Nishad <aseem.nish@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "*"
+  }
 }
