@@ -48,6 +48,13 @@ public class RNReactNativeAndroidScannerModule extends ReactContextBaseJavaModul
     return "ReactNativeAndroidScanner";
   }
 
+  @Override
+    public Map<String, Object> getConstants() {
+        final Map<String, Object> constants = new HashMap<>();
+        constants.put("SCANNED_RESULT", SCANNED_RESULT);
+        return constants;
+  }
+
   private void emitMessageToRN(ReactContext reactContext, String eventName, @Nullable WritableMap params) {
     reactContext
             .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
