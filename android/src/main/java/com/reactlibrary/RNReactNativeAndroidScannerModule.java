@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.facebook.react.bridge.ActivityEventListener;
+import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.BaseActivityEventListener;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.WritableMap;
@@ -34,7 +35,8 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
 
 public class RNReactNativeAndroidScannerModule extends ReactContextBaseJavaModule {
-  
+
+  private WritableMap scannedResult;
   private static final int REQUEST_CODE = 99;
   private final ReactApplicationContext reactContext;
   public static final String REACT_CLASS = "Scanner";
@@ -81,8 +83,13 @@ public class RNReactNativeAndroidScannerModule extends ReactContextBaseJavaModul
                 Bitmap bitmap = null;
                 try {
                     bitmap = MediaStore.Images.Media.getBitmap(getReactApplicationContext().getContentResolver(), uri);
-                    getReactApplicationContext().getContentResolver().delete(uri, null, null);
-                    emitMessageToRN(getReactApplicationContext(), SCANNED_RESULT, null);
+                    //getReactApplicationContext().getContentResolver().delete(uri, null, null);
+
+                    scannedResult = Arguments.createMap();
+                    scannedResult.putString ("uri", uri.toString());
+
+
+                    emitMessageToRN(getReactApplicationContext(), SCANNED_RESULT, scannedResult);
                     Log.d(REACT_CLASS, "onActivitiyResult scan ReactNativeAndroidScanner ");
                     // scannedImageView.setImageBitmap(bitmap);
                 } catch (IOException e) {
