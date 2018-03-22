@@ -21,7 +21,7 @@ project(':scanlibrary').projectDir = new File(rootProject.projectDir, '../node_m
 
 #### Add to an Activity
   Open your activity, usually located in `android/app/src/main/java/[your package]/MainApplication.java`.
-  Add `import com.reactlibrary.RNReactNativeAndroidScannerPackage;;` to the imports at the top of the file.
+  Add `import com.reactlibrary.RNReactNativeAndroidScannerPackage;` to the imports at the top of the file.
   Add `new RNReactNativeAndroidScannerPackage()` to the list returned by the `getPackages()` method.
 
 ## Usage
