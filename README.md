@@ -91,6 +91,12 @@ export default class App extends Component {
   }
 
   onScan = (preference = 2) => {
+    
+    // PICKFILE_REQUEST_CODE
+    // START_CAMERA_REQUEST_CODE = 2
+    // OPEN_CAMERA = 4;
+    // OPEN_MEDIA = 5;
+    
     RNAndroidScanner.startScan(preference);
   }
 
