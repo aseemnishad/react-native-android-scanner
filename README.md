@@ -33,8 +33,10 @@ include ':scanlibrary'
 project(':scanlibrary').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-scanner/android/scanlibrary')
 ```
 
-```
+
 * In android/app/build.gradle
+
+```
 ...
 dependencies {
     ...
@@ -46,9 +48,8 @@ dependencies {
   Add `import com.reactlibrary.RNReactNativeAndroidScannerPackage;` to the imports at the top of the file.
   Add `new RNReactNativeAndroidScannerPackage()` to the list returned by the `getPackages()` method.
 
-## Usage
-
 ```
+## Usage
 import React, {Component} from 'react';
 import {
   Platform,
