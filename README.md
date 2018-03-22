@@ -92,7 +92,7 @@ export default class App extends Component {
 
   onScan = (preference = 2) => {
     
-    // PICKFILE_REQUEST_CODE
+    // PICKFILE_REQUEST_CODE = 1
     // START_CAMERA_REQUEST_CODE = 2
     // OPEN_CAMERA = 4;
     // OPEN_MEDIA = 5;
