@@ -7,13 +7,13 @@
 
 <div align="center">
 
-<img width="23%" src="" alt="Scan Input" title="Scan Input"></img>
+<img width="23%" src="https://github.com/aseemnishad/react-native-android-scanner/blob/master/screenshots/1.png" alt="Scan Input" title="Scan"></img>
 
-<img width="23%" src="" alt="Scan Points" title="Scan Points"></img>
+<img width="23%" src="https://github.com/aseemnishad/react-native-android-scanner/blob/master/screenshots/2.png" alt="Scan Points" title="Scan Points"></img>
 
-<img width="23%" src="" alt="After Scan" title="After Scan"></img>
+<img width="23%" src="https://github.com/aseemnishad/react-native-android-scanner/blob/master/screenshots/3.png" alt="After Scan" title="After Scan"></img>
 
-<img width="23%" src="" alt="Scanned Result" title="Scanned Result"></img>
+<img width="23%" src="https://github.com/aseemnishad/react-native-android-scanner/blob/master/screenshots/4.png" alt="Scanned Result" title="Scanned Result"></img>
 
 </div>
 
