@@ -1,7 +1,7 @@
 
 # React Native Android Scanner
 
-## react native library for [AndroidScannerDemo](https://github.com/jhansireddy/AndroidScannerDemo) 
+## react native implementaion of [AndroidScannerDemo](https://github.com/jhansireddy/AndroidScannerDemo) 
 
 ## Getting started
 
@@ -93,12 +93,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF'
   },
   imageContainer: {
-    flex: 1
+    flex: 1,
+    justifyContent: 'flex-start',
+    alignItems: 'center'
   },
   image: {
     width: 150,
     height: 150,
-    flex: 1
   },
   buttonContainer: {
     flex: 1,
