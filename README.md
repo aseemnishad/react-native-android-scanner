@@ -44,7 +44,8 @@ dependencies {
 }
 ```
 
-Add the required permissions in `AndroidManifest.xml`:
+* Add the required permissions in `AndroidManifest.xml`:
+    
     ```xml
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
