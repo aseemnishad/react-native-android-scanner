@@ -29,6 +29,9 @@
 
 ```gradle
 ...
+include ':react-native-android-scanner'
+project(':react-native-android-scanner').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-scanner/android')
+
 include ':scanlibrary'
 project(':scanlibrary').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-scanner/android/scanlibrary')
 ```
@@ -40,6 +43,7 @@ project(':scanlibrary').projectDir = new File(rootProject.projectDir, '../node_m
 ...
 dependencies {
     ...
+    compile project(':react-native-android-scanner')
     compile project(':scanlibrary')
 }
 ```
