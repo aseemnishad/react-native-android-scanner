@@ -44,6 +44,16 @@ dependencies {
 }
 ```
 
+Add the required permissions in `AndroidManifest.xml`:
+    ```xml
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    ...
+   
+   <application
+      android:allowBackup="true"
+    ```
+
 #### Add to an Activity
 
   Open your activity, usually located in `android/app/src/main/java/[your package]/MainApplication.java`.
