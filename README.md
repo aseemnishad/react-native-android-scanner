@@ -1,7 +1,7 @@
 
 # React Native Android Scanner
 
-## react native implementaion of [AndroidScannerDemo](https://github.com/jhansireddy/AndroidScannerDemo) 
+react native implementaion of [AndroidScannerDemo](https://github.com/jhansireddy/AndroidScannerDemo) 
 
 ## Screenshots
 
