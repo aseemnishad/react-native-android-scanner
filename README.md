@@ -43,8 +43,10 @@ project(':scanlibrary').projectDir = new File(rootProject.projectDir, '../node_m
 ...
 dependencies {
     ...
-    compile project(':react-native-android-scanner')
-    compile project(':scanlibrary')
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation project(':react-native-android-scanner')
+    implementation project(':scanlibrary')
 }
 ```
 
